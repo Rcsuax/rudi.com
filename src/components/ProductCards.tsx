@@ -13,7 +13,7 @@ type Product = {
 
 const ProductCards = () => {
   return (
-    <div className="flex flex-row gap-3">
+    <div className="flex flex-col md:flex-row gap-10 mt-[20px] mb-[40px]">
       
       <Card {...data.products[0]} />
 
@@ -25,7 +25,7 @@ const ProductCards = () => {
 
 const Card = (product: Product) => {
   
-  function onClick() {
+  const onClick = () => {
     Checkout({
       lineItems: [
           {
@@ -37,15 +37,19 @@ const Card = (product: Product) => {
   }
 
   return (
-    <div className="grow">
+    <div className="grow cursor-pointer" onClick={onClick}>
       <div className="flex flex-col justify-center content-center">
-        <h2 className="text-[38px]">{product.title}</h2>
-
-        <Image src={product.splash} width={400} height={400} alt='Cover Image'/>
-
-        <p className='text-red-400 hover:text-blue-600'>Find in-depth information about Product 1</p>
         
-        <button onClick={onClick}>Buy Now</button>
+        <h3 className="mb-[10px]">{product.title}</h3>
+        
+        <div className="next-img-fill-container">
+          <Image 
+            className="next-img-fill rounded-md"
+            src={product.splash} 
+            alt='Cover Image'
+            fill
+            />
+        </div>
       </div>
     </div>
   )

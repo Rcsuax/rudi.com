@@ -6,13 +6,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -26,5 +19,43 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+.next-img-fill-container {
+  width: 100%;
+}
+.next-img-fill-container > div {
+  position: unset !important;
+}
+
+.next-img-fill {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+@layer base {
+  .h1-default, h1 {
+    @apply !text-h1-sm md:!text-h1-md lg:!text-h1-lg !font-bold;
+  }
+  .h2-default, h2 {
+    @apply !text-h2-sm md:!text-h2-md lg:!text-h2-lg !font-bold;
+  }
+  .h3-default, h3 {
+    @apply !text-h3-sm md:!text-h3-md lg:!text-h3-lg !font-bold;
+  }
+  .h4-default, h4 {
+    @apply !text-h4-sm md:!text-h4-md lg:!text-h4-lg !font-bold;
+  }
+  .h5-default, h5 {
+    @apply !text-h5-sm md:!text-h5-md lg:!text-h5-lg !font-bold;
+  }
+  .h6-default, h6 {
+    @apply !text-h6-sm md:!text-h6-md lg:!text-h6-lg !font-bold;
+  }
+  .p-default, p {
+    @apply text-p-sm md:text-p-md lg:text-p-lg;
   }
 }
