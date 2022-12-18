@@ -21,7 +21,7 @@ export default function Home() {
           
           <div className={styles.card}>
             <h2>Product 1</h2>
-            <p>Find in-depth information about Product 1</p>
+            <p className='text-red-400 hover:text-blue-600'>Find in-depth information about Product 1</p>
             <button onClick={() => {
               Checkout({
               lineItems: [
