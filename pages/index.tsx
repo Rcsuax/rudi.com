@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Checkout from '../src/checkout'
 
 export default function Home() {
   return (
@@ -21,7 +22,18 @@ export default function Home() {
           <div className={styles.card}>
             <h2>Product 1</h2>
             <p>Find in-depth information about Product 1</p>
-            <button>Buy Now</button>
+            <button onClick={() => {
+              Checkout({
+              lineItems: [
+                  {
+                    price: '',
+                    quantity: 1
+                  }
+                ]
+              })
+            }
+ 
+            }>Buy Now</button>
           </div>
 
           <div className={styles.card}>
