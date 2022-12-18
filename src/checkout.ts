@@ -23,6 +23,9 @@ const Checkout = async ({ lineItems }: CheckoutArgs) => {
 
   await stripe?.redirectToCheckout({
     mode: 'payment',
+    shippingAddressCollection: {
+      allowedCountries: ['GB']
+    },
     lineItems,
     successUrl: window.location.origin,
     cancelUrl: window.location.origin,
