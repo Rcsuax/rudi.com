@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Checkout from '../src/checkout'
+import data from '../data/products.json'
 
 export default function Home() {
   return (
@@ -14,32 +15,42 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to a <a href="https://nextjs.org">Next.js Ecommerce Store!</a>
+          Welcome to the Store
         </h1>
 
         <div className={styles.grid}>
           
           <div className={styles.card}>
-            <h2>Product 1</h2>
+            <h2>Raina</h2>
+            <Image src={data.products[0].splash} width={400} height={400} alt='Cover Image'/>
             <p className='text-red-400 hover:text-blue-600'>Find in-depth information about Product 1</p>
             <button onClick={() => {
               Checkout({
               lineItems: [
                   {
-                    price: '',
+                    price: data.products[0].id,
                     quantity: 1
                   }
                 ]
               })
             }
- 
             }>Buy Now</button>
           </div>
 
           <div className={styles.card}>
-            <h2>Product 2</h2>
+            <h2>In the Home of a God</h2>
             <p>Find in-depth information about Product 2</p>
-            <button>Buy Now</button>
+            <button onClick={() => {
+              Checkout({
+              lineItems: [
+                  {
+                    price: data.products[1].id,
+                    quantity: 1
+                  }
+                ]
+              })
+            }
+            }>Buy Now</button>
           </div>
 
         </div>
