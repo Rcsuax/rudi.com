@@ -1,6 +1,15 @@
 import { Stripe, loadStripe } from "@stripe/stripe-js";
 
-const Checkout = async ({ lineItems }: any) => {
+type CheckoutArgs = {
+  lineItems: Array<StripeLineItem>
+}
+
+type StripeLineItem = {
+  price: string
+  quantity: number
+}
+
+const Checkout = async ({ lineItems }: CheckoutArgs) => {
   let stripePromise: Promise<Stripe | null>
 
   const getStripe = () => {
