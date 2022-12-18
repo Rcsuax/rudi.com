@@ -2,12 +2,14 @@
   "products": [
     {
       "id": "price_1M5vW5KukHCVwQgfdptQJrVD",
+      "title": "Raina",
       "image": "/products/Raina Cover.jpg",
       "splash": "/products/Raina Splash.jpg"
       
     },
     {
       "id": "price_1MGEseKukHCVwQgf02pPs9iR",
+      "title": "In the Home of a God",
       "image": "/products/raina1",
       "splash": "/products/Raina Splash.jpg"
     }
