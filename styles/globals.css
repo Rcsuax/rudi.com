@@ -14,28 +14,19 @@ body {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+/* *:hover {
+  outline: 1px blue solid;
 } */
 
 .next-img-fill-container {
   width: 100%;
 }
-.next-img-fill-container > div {
-  position: unset !important;
-}
 
 .next-img-fill {
-  object-fit: contain;
   width: 100% !important;
-  position: relative !important;
   height: unset !important;
+  position: relative !important;
+  object-fit: contain;
 }
 
 @layer base {
