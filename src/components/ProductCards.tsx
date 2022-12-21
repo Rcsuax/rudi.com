@@ -38,11 +38,11 @@ const Card = (product: Product) => {
 
   return (
     <div className="grow cursor-pointer" onClick={onClick}>
-      <div className="flex flex-col justify-center content-center">
+      <div className="flex flex-col justify-center content-center ">
         
         <h3 className="mb-[10px]">{product.title}</h3>
-        
-        <div className="next-img-fill-container">
+
+        <div className="next-img-fill-container ">
           <Image 
             className="next-img-fill rounded-md"
             src={product.splash} 

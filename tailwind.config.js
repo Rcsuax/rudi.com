@@ -3,6 +3,14 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "primary-pink"   : "#EE1E58",
+        "secondary-pink" : "#F35681",
+        "orange"         : "#D08926",
+        "light-blue"     : "#7DE4E3",
+        "dark-blue"      : "#2B3E4D",
+        "teal"           : "#64DABA",
+      },
       fontSize: {
         // h1
         "h1-sm": ["28px", "38px"],

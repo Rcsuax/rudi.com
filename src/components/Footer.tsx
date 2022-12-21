@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center w-full  bottom-0 bg-white text-black">
+    <footer className="flex flex-col items-center w-full  bottom-0 bg-dark-blue text-white">
       <div className='flex flex-row gap-3 justify-center items-center mt-2'>
         <a href='https://www.instagram.com/shiny_nomad/'>
           <img src='/social/instagram.svg'/>
@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className='text-black'>™ ShinyNomad</p>
+      <p className=''>™ ShinyNomad</p>
     </footer>
   )
 }

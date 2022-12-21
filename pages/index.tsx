@@ -14,13 +14,17 @@ export default function Home() {
 
       <Navbar />
 
-      <main className='mx-[20px]'>
-        <img 
-          className="w-full h-[500px] mt-[60px]"
-          src='/products/Raina Splash.jpg' 
+      <main>
+        <img
+          className="w-full h-[500px] md:mt-[80px]"
+          src='/assets/Kickstarter Banner.jpg' 
           alt='Banner Splash' />
+        <h1 className='translate-y-[-300px] text-center text-white'>SHINY NOMAD</h1>
 
-        <ProductCards />
+        <div className='mx-[20px]'>
+          <ProductCards />  
+        </div>
+        <div className='h-[200px] bg-primary-pink'></div>
       </main>
 
       <Footer />
