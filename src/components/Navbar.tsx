@@ -50,11 +50,11 @@ const Navbar = () => {
         { open && (
           <div className="absolute w-full translate-y-[80px] h-screen bg-white z-10 ">
             <div className="text-black flex flex-col gap-10 h-full">
-              <Link href='/' className="p-3"> Comics </Link>
-              <Link href='/' className="p-3"> Store </Link>
-              <Link href='/' className="p-3"> Portfolio </Link>
-              <Link href='/' className="p-3"> About </Link>
-              <Link href='/' className="p-3"> Contact </Link>
+              <Link href='/' className="p-3 cursor-pointer"> Comics </Link>
+              <Link href='/' className="p-3 cursor-pointer"> Store </Link>
+              <Link href='/' className="p-3 cursor-pointer"> Portfolio </Link>
+              <Link href='/' className="p-3 cursor-pointer"> About </Link>
+              <Link href='/' className="p-3 cursor-pointer"> Contact </Link>
             </div>
           </div>
         )}
