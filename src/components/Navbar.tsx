@@ -5,8 +5,6 @@ const Navbar = () => {
   const [open, setOpen ] = React.useState<boolean>(false)
   
   const onClick = () => {
-    console.log('open');
-    
     setOpen(!open)
   }
 
