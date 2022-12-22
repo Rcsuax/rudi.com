@@ -37,7 +37,7 @@ const Card = (product: Product) => {
   }
 
   return (
-    <div className="grow cursor-pointer" onClick={onClick}>
+    <div className="grow cursor-pointer mb-[300px]" onClick={onClick}>
       <div className="flex flex-col justify-center content-center ">
         
         <h3 className="mb-[10px]">{product.title}</h3>

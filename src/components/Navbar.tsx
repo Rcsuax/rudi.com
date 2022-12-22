@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (<div>
-      <nav className='hidden md:grid grid-cols-2 justify-between items-center px-[20px] fixed top-0 w-full h-[80px]
+      <nav className='hidden md:grid grid-cols-2 justify-between items-center px-[20px] fixed top-0 w-full h-[80px] z-10
         text-[#e6e6e6] bg-primary-pink'>
         
         <div className='flex flex-row justify-between text-[30px] gap-4'>
