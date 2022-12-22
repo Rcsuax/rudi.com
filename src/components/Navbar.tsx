@@ -20,7 +20,7 @@ const Navbar = () => {
             <img src='/social/instagram.svg'/>
           </a>
 
-          <a href=''>
+          <a href='https://www.youtube.com/channel/UC-4AqNSCzZ1c9s3dI-WZufg'>
             <img src='/social/youtube.svg'/>
           </a>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
             <img src='/social/facebook.svg'/>
           </a>
 
-          <a href=''>
+          <a href='https://twitter.com/ShiniestNomad'>
             <img src='/social/twitter.svg'/>
           </a>
         </div>

@@ -5,7 +5,7 @@ import ProductCards from '../src/components/ProductCards'
 
 export default function Home() {
   return (
-    <div>
+    <div className=''>
       <Head>
         <title>Nomad Store</title>
         <meta name="description" content="Nomad illustrations Store" />
