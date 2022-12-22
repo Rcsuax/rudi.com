@@ -12,8 +12,8 @@ const Footer = () => {
           <img src='/social/youtube.svg'/>
         </a>
 
-        <a href=''>
-          <img src='/social/facebook.svg'/>
+        <a href='https://www.patreon.com/ShinyNomad/membership'>
+          <img src='/social/patreon.svg'/>
         </a>
 
         <a href='https://twitter.com/ShiniestNomad'>
