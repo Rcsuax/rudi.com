@@ -13,7 +13,7 @@ type Product = {
 
 const ProductCards = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 mt-[20px] mb-[40px]">
+    <div className="flex flex-col md:flex-row gap-10 mt-[20px] mb-[300px]">
       
       <Card {...data.products[0]} />
 
@@ -37,7 +37,7 @@ const Card = (product: Product) => {
   }
 
   return (
-    <div className="grow cursor-pointer mb-[300px]" onClick={onClick}>
+    <div className="grow cursor-pointer" onClick={onClick}>
       <div className="flex flex-col justify-center content-center ">
         
         <h3 className="mb-[10px]">{product.title}</h3>
