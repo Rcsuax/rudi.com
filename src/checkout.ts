@@ -1,12 +1,12 @@
 import { Stripe, loadStripe } from "@stripe/stripe-js";
 
-type CheckoutArgs = {
-  lineItems: Array<StripeLineItem>
-}
-
 type StripeLineItem = {
   price: string
   quantity: number
+}
+
+type CheckoutArgs = {
+  lineItems: Array<StripeLineItem>
 }
 
 const Checkout = async ({ lineItems }: CheckoutArgs) => {
