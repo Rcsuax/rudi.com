@@ -15,11 +15,19 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <img
+        {/* <img
           className="w-full h-[500px] md:mt-[80px]"
           src='/assets/Kickstarter Banner.jpg' 
-          alt='Banner Splash' />
-        <h1 className='translate-y-[-300px] text-center text-white'>SHINY NOMAD</h1>
+          alt='Banner Splash' /> */}
+
+        <video src='/assets/Banner.mp4' 
+          className='w-full  md:mt-[80px]'
+          preload="auto"
+          autoPlay
+          playsInline
+          muted
+          loop/>
+        <h1 className='translate-y-[-400px] text-center text-white'>SHINY NOMAD</h1>
 
         <div className='mx-[20px]'>
           <ProductCards />  
