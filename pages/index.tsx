@@ -27,7 +27,7 @@ export default function Home() {
           playsInline
           muted
           loop/>
-        <h1 className='translate-y-[-400px] text-center text-white'>SHINY NOMAD</h1>
+        <h1 className='text-lemon translate-y-[-200px] md:translate-y-[-400px] lg:translate-y-[-600px] text-center text-whit text-[60px] md:text-[80px]'>SHINY NOMAD</h1>
 
         <div className='mx-[20px]'>
           <ProductCards />  

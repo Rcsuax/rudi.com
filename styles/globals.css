@@ -30,7 +30,13 @@ body {
 }
 
 @layer base {
-  .h1-default, h1 {
+  @font-face {
+    font-family: Lemon Milk;
+    font-weight: 400;
+    src: url(/LEMONMILK-BOLD.OTF) format("otf");
+  }
+
+  .h1-default {
     @apply !text-h1-sm md:!text-h1-md lg:!text-h1-lg !font-bold;
   }
   .h2-default, h2 {

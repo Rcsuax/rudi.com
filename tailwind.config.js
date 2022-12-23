@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        'lemon': ['Lemon Milk']
+      },
       colors: {
         "primary-pink"   : "#EE1E58",
         "secondary-pink" : "#F35681",
