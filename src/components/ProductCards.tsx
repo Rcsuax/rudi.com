@@ -41,7 +41,7 @@ const Card = (product: Product) => {
       <div className="flex flex-col justify-center content-center ">
         
         <h3 className="mb-[10px]">{product.title}</h3>
-
+        {/*         
         <div className="next-img-fill-container ">
           <Image 
             className="next-img-fill rounded-md"
@@ -49,7 +49,13 @@ const Card = (product: Product) => {
             alt='Cover Image'
             fill
             />
-        </div>
+        </div> 
+        */}
+        <img 
+          className="w-full h-[400px] rounded-md"
+          src={product.splash} 
+          alt='Card Image'
+          />
       </div>
     </div>
   )
